@@ -57,6 +57,23 @@ img {
     max-width: 100%;
     display: block;
 }
+
+/* Garante que a tag figure não adicione margens extra que estraguem o grid */
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o texto da fonte da imagem */
+.fonte-imagem {
+    display: block;
+    text-align: right;
+    font-size: 0.8rem;
+    color: #555555;
+    margin-top: 5px;
+    font-style: italic;
+}
+
 /* Aplicando a fonte elegante aos títulos e à logo */
 h1, h2, h3, .logo {
     font-family: "DM Serif Display", serif;
@@ -793,6 +810,11 @@ body.modo-noturno .galeria {
 /* Escurecendo as bordinhas das fotos */
 body.modo-noturno .foto {
     border-color: #1d1d1d;
+}
+
+/* Regra para o texto da fonte não desaparecer no Modo Noturno */
+body.modo-noturno .fonte-imagem {
+    color: #aaaaaa;
 }
 
 /* =========================================================
